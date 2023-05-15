@@ -114,9 +114,7 @@ function App() {
         </button>
         <button type="button" className="btn btn-success" onClick={handleClick}>
           Restart
-          <button type="button" className="btn btn-success" onClick={handleClick}>
-          Restart
-        </button></button>
+        </button>
         
         </div>
 
