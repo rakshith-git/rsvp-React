@@ -73,10 +73,31 @@ div.prog
   margin-left: 45%;
 
 }
+.accordion-item
+{
+  margin-left: 0%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.accordion-button.collapsed
+{
+  margin: 0rem;
+
+  
+  width: 100%;
+}
+.accordion-button
+{
+  margin: 0rem;
+
+  
+  width: 100%;
+}
 .lightertxt
 {
 
-  margin-top: 0.28rem
+  margin-top: 0.0rem
 }
 .plbButtons
 {
@@ -94,7 +115,7 @@ button
     align-items: center;
     flex-direction: rows;
     margin-top: 50%;
-    margin-left: 35%;
+    margin-left: 10%;
     font-size: 3rem;
   
   }
@@ -121,7 +142,7 @@ button
 }
   .lightertxt
   {
-    margin-top: 0.21rem ;
+    margin-top: 0 ;
     font-size: larger;
     
   }
