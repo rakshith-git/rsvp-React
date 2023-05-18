@@ -1,10 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Navbar({title,first,second,dropDown="dropDown",dropDownitem1="item-1",dropDownitem2="item-2",dropDownitem3="item-3"}) {
   return (
     <div><nav className="navbar navbar-expand-lg bg-body-tertiary">
     <div className="container-fluid" >
-      <a className="navbar-brand" href="/">
+      <a className="navbar-brand" href="#">
         {title}
       </a>
       <button
@@ -21,14 +22,14 @@ export default function Navbar({title,first,second,dropDown="dropDown",dropDowni
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="/">
+            <Link className="nav-link active" aria-current="page" to="/">
               {first}
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/">
+            <Link className="nav-link" to="/about">
               {second}
-            </a>
+            </Link>
           </li>
           <li className="nav-item dropdown">
             <a
@@ -42,12 +43,12 @@ export default function Navbar({title,first,second,dropDown="dropDown",dropDowni
             </a>
             <ul className="dropdown-menu">
               <li>
-                <a className="dropdown-item" href="/">
+                <a className="dropdown-item" href="#">
                   {dropDownitem1}
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="/">
+                <a className="dropdown-item" href="#">
                 {dropDownitem2}
                 </a>
               </li>
@@ -55,7 +56,7 @@ export default function Navbar({title,first,second,dropDown="dropDown",dropDowni
                 <hr className="dropdown-divider" />
               </li>
               <li>
-                <a className="dropdown-item" href="/">
+                <a className="dropdown-item" href="#">
                 {dropDownitem3}
                 </a>
               </li>
